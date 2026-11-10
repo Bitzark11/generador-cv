@@ -26,6 +26,14 @@ Otros comandos: `npm run dev` (se reinicia al guardar) y `npm run build` (genera
 
 > No abras `index.html` con doble clic: el `fetch` necesita el servidor (`npm start`).
 
+## Solución de problemas
+
+| Síntoma | Causa y solución |
+|---|---|
+| Al guardar sale **error 405** (o 404) | La página la está sirviendo otro programa (Live Server de VS Code, Netlify, GitHub Pages…) que no ejecuta `server.js`. En local, usa `npm start` y abre `http://localhost:3000`. Si el frontend está en Netlify/Vercel, pon la URL del backend en `API_URL` (`public/js/api.mjs`) y la URL del frontend en `ALLOWED_ORIGIN` de Render |
+| Sale «No se pudo conectar con el servidor» | El backend está apagado, dormido (Render gratis tarda ~1 min en despertar) o CORS lo bloquea: revisa `ALLOWED_ORIGIN` |
+| Los CV guardados desaparecen | Se guardan en memoria: se pierden al reiniciar el servidor |
+
 ## Estructura
 
 ```

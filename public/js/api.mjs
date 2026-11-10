@@ -41,7 +41,18 @@ async function pedir(ruta, opciones) {
   // response.ok es true solo para códigos 200-299.
   // Si es false (400, 404, 500...), mostramos los mensajes del servidor.
   if (!respuesta.ok) {
-    const mensaje = datos.errores ? datos.errores.join(" ") : "El servidor respondió con un error (" + respuesta.status + ").";
+    let mensaje = "El servidor respondió con un error (" + respuesta.status + ").";
+    if (datos.errores) {
+      // Respuesta de NUESTRO servidor Express: trae sus mensajes en JSON.
+      mensaje = datos.errores.join(" ");
+    } else if (respuesta.status === 404 || respuesta.status === 405) {
+      // 404/405 SIN JSON = la página está siendo servida por otro programa
+      // (Live Server, Netlify, GitHub Pages...) y no por Express, así que
+      // ahí NO existe la API. Es el error de configuración más común.
+      mensaje = "No se encontró la API del servidor (error " + respuesta.status + "). " +
+        "Abre la app con «npm start» en http://localhost:3000 o, si está publicada, " +
+        "revisa API_URL en js/api.mjs.";
+    }
     throw new Error(mensaje);
   }
   return datos;
