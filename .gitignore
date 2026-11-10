@@ -1,0 +1,16 @@
+# Dependencias (se reinstalan con npm install)
+node_modules/
+
+# Variables de entorno reales (pueden contener claves)
+.env
+
+# Sistema operativo y editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Informes temporales
+*.log
+
+# Carpeta generada por npm run build (se vuelve a crear en el despliegue)
+dist/
