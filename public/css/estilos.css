@@ -1,0 +1,102 @@
+/* ===================================================================
+   ESTILOS.CSS — solo lo que Bootstrap NO trae.
+   Bootstrap ya se encarga de botones, tarjetas, formularios, cuadrícula
+   y tema oscuro. Aquí van: el foco visible, las microinteracciones y la
+   "hoja" del currículum con sus dos plantillas.
+   =================================================================== */
+
+/* ---------- Variables CSS: un solo lugar para los colores propios ---------- */
+:root {
+  --color-foco: #0a58ca;        /* contorno de foco en tema claro */
+}
+/* En tema oscuro cambiamos solo la variable; el resto del CSS no se toca */
+[data-bs-theme="dark"] {
+  --color-foco: #6ea8fe;        /* azul claro: buen contraste sobre fondo oscuro */
+}
+
+/* ---------- Accesibilidad: FOCO VISIBLE con teclado ----------
+   :focus-visible solo se activa al navegar con Tab (no al hacer clic).
+   Nunca se quita el contorno sin reemplazarlo por otro igual de visible. */
+/* Bootstrap pone "outline: 0" en .btn y .form-control, así que repetimos
+   esas clases en el selector (mayor especificidad) para recuperar el contorno. */
+a:focus-visible,
+.btn:focus-visible,
+.btn-close:focus-visible,
+.form-control:focus-visible,
+.form-check-input:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 2px;
+}
+
+/* ---------- Microinteracciones (retroalimentación visual) ---------- */
+.btn {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.97);       /* efecto de botón "hundido" al presionar */
+}
+.btn:disabled {
+  cursor: not-allowed;          /* el cursor avisa que no se puede usar ahora */
+}
+
+/* Respeta a quien pidió "reducir movimiento" en su sistema operativo */
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:active:not(:disabled) { transform: none; }
+}
+
+/* ---------- La hoja del currículum ----------
+   Siempre es blanca (como un papel real), también en el tema oscuro,
+   por eso fijamos color de fondo Y de texto. */
+.hoja {
+  background: #fff;
+  color: #1f2328;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  min-height: 600px;
+}
+/* En pantallas medianas en adelante, más aire dentro de la hoja */
+@media (min-width: 768px) {
+  .hoja { padding: 2.5rem; min-height: 900px; }
+}
+.hoja h2 { margin: 0; font-size: 1.8rem; }
+.hoja__contacto {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+.hoja__seccion { margin-top: 1.5rem; }
+.hoja__seccion h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+.hoja__item { margin-bottom: 0.75rem; }
+.hoja__item-titulo { display: flex; justify-content: space-between; gap: 1rem; font-weight: 700; }
+
+/* ---------- Plantilla CLÁSICA: tipografía con serifa, títulos dorados ---------- */
+.plantilla-clasica { font-family: Georgia, "Times New Roman", serif; }
+.plantilla-clasica .hoja__seccion h3 {
+  color: #6b5328;                /* oscurecido para superar 4.5:1 sobre blanco */
+  text-transform: uppercase;
+  border-bottom: 2px solid #8a6d3b;
+  padding-bottom: 0.2rem;
+}
+
+/* ---------- Plantilla MODERNA: tipografía limpia, acentos verde azulado ---------- */
+.plantilla-moderna { font-family: system-ui, Arial, sans-serif; }
+.plantilla-moderna h2 { color: #16233f; }
+.plantilla-moderna .hoja__cargo { color: #156660; font-weight: 700; }
+.plantilla-moderna .hoja__seccion h3 {
+  color: #156660;
+  border-bottom: 2px solid #e4e7ee;
+  padding-bottom: 0.2rem;
+}
+
+/* ---------- Al imprimir / "Guardar como PDF": solo sale la hoja ---------- */
+@media print {
+  .hoja { box-shadow: none; max-width: none; padding: 0; min-height: 0; }
+}
