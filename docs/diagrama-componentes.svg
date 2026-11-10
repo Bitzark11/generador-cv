@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 1120" width="1640" height="1120" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#1d4ed8"/></marker>
+<marker id="g" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#15803d"/></marker>
+<marker id="k" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#475569"/></marker>
+</defs>
+<rect width="1640" height="1120" fill="#f8fafc"/>
+<rect x="0" y="0" width="1640" height="64" fill="#14532d"/>
+<text x="30" y="30" text-anchor="start" font-size="22" font-weight="700" fill="#ffffff">Diagrama de componentes — Generador de Currículums Visuales</text>
+<text x="30" y="52" text-anchor="start" font-size="13" font-weight="400" fill="#d1fae5">Proyecto del segundo corte · Node.js + Express + Bootstrap + fetch + Web Storage</text>
+<text x="1610" y="30" text-anchor="end" font-size="20" font-weight="700" fill="#ffffff">Dayron Sotelo</text>
+<text x="1610" y="52" text-anchor="end" font-size="13" font-weight="400" fill="#d1fae5">UNISANGIL</text>
+<rect x="24" y="84" width="796" height="760" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="44" y="110" text-anchor="start" font-size="15" font-weight="700" fill="#1e40af">NAVEGADOR DEL USUARIO  (frontend)</text>
+<rect x="44" y="128" width="756" height="92" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1.6"/>
+<text x="422.0" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">Vista: public/index.html (vista única) + Bootstrap 5.3.8</text>
+<text x="422.0" y="169" text-anchor="middle" font-size="12" fill="#33414f">CDN jsDelivr con versión fija e integrity · meta viewport · tema claro/oscuro con data-bs-theme</text>
+<text x="422.0" y="184" text-anchor="middle" font-size="12" fill="#33414f">Cuadrícula container-fluid › row › col-12 col-lg-5 col-xl-4 / col-lg-7 · card, btn, alert, input-group</text>
+<text x="422.0" y="199" text-anchor="middle" font-size="12" fill="#33414f">css/estilos.css propio (hoja del CV, foco visible, microinteracciones)</text>
+<rect x="344" y="252" width="240" height="50" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="464.0" y="275" text-anchor="middle" font-size="15" font-weight="700" fill="#1b2733">app.mjs</text>
+<text x="464.0" y="293" text-anchor="middle" font-size="11" fill="#33414f">orquesta el arranque y los botones</text>
+<polyline points="464,220 464,252" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#k)"/>
+<text x="470" y="240" text-anchor="start" font-size="11" font-weight="400" fill="#475569">&lt;script type="module"&gt;</text>
+<rect x="44" y="352" width="144" height="76" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="116.0" y="373" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">formulario.mjs</text>
+<text x="116.0" y="391" text-anchor="middle" font-size="11" fill="#33414f">eventos con delegación</text>
+<text x="116.0" y="405" text-anchor="middle" font-size="11" fill="#33414f">(input / click / change)</text>
+<polyline points="464,302 464,326 116,326 116,352" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="197" y="352" width="144" height="76" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="269.0" y="373" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">plantillas.mjs</text>
+<text x="269.0" y="391" text-anchor="middle" font-size="11" fill="#33414f">construirCV():</text>
+<text x="269.0" y="405" text-anchor="middle" font-size="11" fill="#33414f">createElement +</text>
+<text x="269.0" y="419" text-anchor="middle" font-size="11" fill="#33414f">textContent</text>
+<polyline points="464,302 464,326 269,326 269,352" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="350" y="352" width="144" height="76" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="422.0" y="373" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">interfaz.mjs</text>
+<text x="422.0" y="391" text-anchor="middle" font-size="11" fill="#33414f">mensajes aria-live,</text>
+<text x="422.0" y="405" text-anchor="middle" font-size="11" fill="#33414f">spinner, data-bs-theme</text>
+<polyline points="464,302 464,326 422,326 422,352" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="503" y="352" width="144" height="76" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="575.0" y="373" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">almacenamiento.mjs</text>
+<text x="575.0" y="391" text-anchor="middle" font-size="11" fill="#33414f">localStorage y</text>
+<text x="575.0" y="405" text-anchor="middle" font-size="11" fill="#33414f">sessionStorage</text>
+<polyline points="464,302 464,326 575,326 575,352" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="656" y="352" width="144" height="76" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="728.0" y="373" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">api.mjs</text>
+<text x="728.0" y="391" text-anchor="middle" font-size="11" fill="#33414f">ÚNICO lugar con fetch</text>
+<text x="728.0" y="405" text-anchor="middle" font-size="11" fill="#33414f">y con API_URL</text>
+<polyline points="464,302 464,326 728,326 728,352" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="44" y="520" width="300" height="110" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.6"/>
+<text x="194.0" y="542" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">DOM (vista previa del CV)</text>
+<text x="194.0" y="561" text-anchor="middle" font-size="12" fill="#33414f">&lt;article class="hoja plantilla-…"&gt;</text>
+<text x="194.0" y="576" text-anchor="middle" font-size="12" fill="#33414f">Los datos del usuario entran SOLO</text>
+<text x="194.0" y="591" text-anchor="middle" font-size="12" fill="#33414f">con textContent → evita XSS</text>
+<polyline points="269,428 269,480 194,480 194,520" fill="none" stroke="#0f766e" stroke-width="1.5" marker-end="url(#k)"/>
+<text x="232" y="474" text-anchor="middle" font-size="11" font-weight="400" fill="#0f766e">dibuja el CV</text>
+<rect x="370" y="520" width="430" height="110" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.6"/>
+<text x="585.0" y="542" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">Almacenamiento del navegador</text>
+<text x="585.0" y="561" text-anchor="middle" font-size="12" fill="#33414f">localStorage: cv-borrador (JSON), cv-tema</text>
+<text x="585.0" y="576" text-anchor="middle" font-size="12" fill="#33414f">sessionStorage: cv-ultimo-id, cv-recargas</text>
+<text x="585.0" y="591" text-anchor="middle" font-size="12" fill="#33414f">Sin datos sensibles · maneja null · «Olvidar mis datos»</text>
+<polyline points="575,428 575,520" fill="none" stroke="#d97706" stroke-width="1.5" marker-end="url(#k)"/>
+<text x="583" y="480" text-anchor="start" font-size="11" font-weight="400" fill="#b45309">getItem / setItem</text>
+<rect x="44" y="650" width="300" height="56" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="194.0" y="671" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2733">API externa: no aplica</text>
+<text x="194.0" y="689" text-anchor="middle" font-size="11" fill="#33414f">(el CDN de Bootstrap es solo un archivo estático)</text>
+<rect x="44" y="724" width="756" height="100" rx="8" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.6"/>
+<text x="422.0" y="746" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">DÓNDE ESTÁ PUBLICADO EL FRONTEND</text>
+<text x="422.0" y="765" text-anchor="middle" font-size="12" fill="#33414f">Opción A: servido por el mismo servicio de Render (express.static, mismo origen, sin CORS)</text>
+<text x="422.0" y="780" text-anchor="middle" font-size="12" fill="#33414f">Opción B: Netlify o Vercel (carpeta dist/) → api.mjs usa la URL del backend en Render</text>
+<text x="422.0" y="795" text-anchor="middle" font-size="12" fill="#33414f">Bootstrap: CDN jsDelivr (cdn.jsdelivr.net)</text>
+<rect x="1060" y="84" width="556" height="760" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="1080" y="110" text-anchor="start" font-size="15" font-weight="700" fill="#166534">SERVIDOR  Node.js + Express  (backend en Render)</text>
+<rect x="1080" y="128" width="516" height="44" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1338.0" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">server.js  ·  npm start  →  node server.js</text>
+<rect x="1080" y="190" width="516" height="56" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+<text x="1338.0" y="212" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">GET /api/plantillas</text>
+<text x="1338.0" y="231" text-anchor="middle" font-size="12" fill="#33414f">200 + JSON [{id, nombre}]</text>
+<rect x="1080" y="262" width="516" height="56" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+<text x="1338.0" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">POST /api/cv</text>
+<text x="1338.0" y="303" text-anchor="middle" font-size="12" fill="#33414f">valida → 201 {id, cv}  ó  400 {errores}</text>
+<rect x="1080" y="334" width="516" height="56" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+<text x="1338.0" y="356" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">GET /api/cv/:id</text>
+<text x="1338.0" y="375" text-anchor="middle" font-size="12" fill="#33414f">200 {cv}  ó  404 «no existe»</text>
+<rect x="1080" y="406" width="516" height="56" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+<text x="1338.0" y="428" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">GET /api/salud</text>
+<text x="1338.0" y="447" text-anchor="middle" font-size="12" fill="#33414f">200 {ok, hora}  (prueba del despliegue)</text>
+<rect x="1080" y="480" width="516" height="58" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1338.0" y="502" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">Middlewares (en orden)</text>
+<text x="1338.0" y="521" text-anchor="middle" font-size="12" fill="#33414f">compression · cors (solo /api, ALLOWED_ORIGIN) · express.json 50kb</text>
+<rect x="1080" y="556" width="250" height="64" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1205.0" y="578" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">validar.js</text>
+<text x="1205.0" y="597" text-anchor="middle" font-size="12" fill="#33414f">limpia y valida lo que llega</text>
+<text x="1205.0" y="612" text-anchor="middle" font-size="12" fill="#33414f">(el servidor nunca confía)</text>
+<rect x="1346" y="556" width="250" height="64" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1471.0" y="578" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">Map en memoria</text>
+<text x="1471.0" y="597" text-anchor="middle" font-size="12" fill="#33414f">cvGuardados (id → cv)</text>
+<text x="1471.0" y="612" text-anchor="middle" font-size="12" fill="#33414f">se borra al reiniciar</text>
+<rect x="1080" y="636" width="250" height="64" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.6"/>
+<text x="1205.0" y="658" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">.env  (fuera de GitHub)</text>
+<text x="1205.0" y="677" text-anchor="middle" font-size="12" fill="#33414f">PORT · ALLOWED_ORIGIN · NODE_ENV</text>
+<text x="1205.0" y="692" text-anchor="middle" font-size="12" fill="#33414f">público: .env.example</text>
+<rect x="1346" y="636" width="250" height="64" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1471.0" y="658" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">express.static</text>
+<text x="1471.0" y="677" text-anchor="middle" font-size="12" fill="#33414f">dist/ (producción, minificado)</text>
+<text x="1471.0" y="692" text-anchor="middle" font-size="12" fill="#33414f">public/ (desarrollo)</text>
+<polyline points="1205,538 1205,556" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<polyline points="1330,588 1346,588" fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<rect x="1080" y="724" width="516" height="100" rx="8" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.6"/>
+<text x="1338.0" y="746" text-anchor="middle" font-size="14" font-weight="700" fill="#1b2733">DÓNDE ESTÁ PUBLICADO EL BACKEND</text>
+<text x="1338.0" y="765" text-anchor="middle" font-size="12" fill="#33414f">Render (Web Service) · Build: npm install &amp;&amp; npm run build</text>
+<text x="1338.0" y="780" text-anchor="middle" font-size="12" fill="#33414f">Start: node server.js · https://TU-APP.onrender.com</text>
+<text x="1338.0" y="795" text-anchor="middle" font-size="12" fill="#33414f">(plan gratuito: se duerme ~15 min sin uso)</text>
+<polyline points="800,396 846,396 846,210" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+<polyline points="846,210 1080,210" fill="none" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="962" y="204" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">fetch GET /api/plantillas</text>
+<polyline points="846,282 1080,282" fill="none" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="962" y="276" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">fetch POST /api/cv (body JSON)</text>
+<polyline points="846,354 1080,354" fill="none" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="962" y="348" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">fetch GET /api/cv/:id</text>
+<polyline points="870,228 870,470 728,470 728,438" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#g)"/>
+<polyline points="1080,228 870,228" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="7 5"/>
+<text x="975" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">← 200 JSON</text>
+<polyline points="1080,300 870,300" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="7 5"/>
+<text x="975" y="314" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">← 201 / 400 JSON</text>
+<polyline points="1080,372 870,372" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="7 5"/>
+<text x="975" y="386" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">← 200 / 404 JSON</text>
+<line x1="838" y1="560" x2="878" y2="560" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="886" y="564" text-anchor="start" font-size="11" font-weight="700" fill="#1d4ed8">petición (fetch)</text>
+<line x1="838" y1="582" x2="878" y2="582" stroke="#15803d" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#g)"/>
+<text x="886" y="586" text-anchor="start" font-size="11" font-weight="700" fill="#15803d">respuesta JSON</text>
+<line x1="838" y1="604" x2="878" y2="604" stroke="#475569" stroke-width="1.5" marker-end="url(#k)"/>
+<text x="886" y="608" text-anchor="start" font-size="11" font-weight="700" fill="#475569">llamada interna</text>
+<rect x="24" y="866" width="1592" height="226" rx="12" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="44" y="892" text-anchor="start" font-size="15" font-weight="700" fill="#0f172a">RECORRIDO DE UNA ACCIÓN: «Guardar CV en el servidor»  (dirección del flujo de datos)</text>
+<rect x="44" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="66" cy="936" r="14" fill="#14532d"/>
+<text x="66" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<text x="86" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">Clic en #btn-guardar</text>
+<text x="58" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">addEventListener en app.mjs;</text>
+<text x="58" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">el botón se desactiva y</text>
+<text x="58" y="1008" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">muestra spinner</text>
+<rect x="267" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="289" cy="936" r="14" fill="#14532d"/>
+<text x="289" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<text x="309" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">app.mjs → api.mjs</text>
+<text x="281" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">guardarCVEnServidor(estado)</text>
+<text x="281" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">dentro de try/catch con await</text>
+<rect x="490" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="512" cy="936" r="14" fill="#14532d"/>
+<text x="512" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<text x="532" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">fetch POST /api/cv</text>
+<text x="504" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">cuerpo JSON (JSON.stringify)</text>
+<text x="504" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">hacia API_URL + "/api/cv"</text>
+<rect x="713" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="735" cy="936" r="14" fill="#14532d"/>
+<text x="735" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">4</text>
+<text x="755" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">Express: CORS + json</text>
+<text x="727" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">cors revisa el Origin;</text>
+<text x="727" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">express.json convierte el</text>
+<text x="727" y="1008" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">cuerpo</text>
+<rect x="936" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="958" cy="936" r="14" fill="#14532d"/>
+<text x="958" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">5</text>
+<text x="978" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">validar.js</text>
+<text x="950" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">limpia textos y valida:</text>
+<text x="950" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">nombre, plantilla, correo,</text>
+<text x="950" y="1008" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">teléfono</text>
+<rect x="1159" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="1181" cy="936" r="14" fill="#14532d"/>
+<text x="1181" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">6</text>
+<text x="1201" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">Respuesta JSON</text>
+<text x="1173" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">201 {id, cv} ó 400 {errores};</text>
+<text x="1173" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">los 404 y 403 también viajan</text>
+<text x="1173" y="1008" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">en JSON</text>
+<rect x="1382" y="910" width="213" height="160" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<circle cx="1404" cy="936" r="14" fill="#14532d"/>
+<text x="1404" y="941" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">7</text>
+<text x="1424" y="941" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">Actualiza el DOM</text>
+<text x="1396" y="974" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">response.ok → sessionStorage</text>
+<text x="1396" y="991" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">(cv-ultimo-id) + mensaje</text>
+<text x="1396" y="1008" text-anchor="start" font-size="12" font-weight="400" fill="#33414f">aria-live</text>
+</svg>
